@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'onbase',
     'django_celery_beat',
-    #'kombu.transport',
 ]
 
 MIDDLEWARE = [
@@ -140,8 +139,8 @@ LOGIN_REDIRECT_URL = "index"
 #email id
 EMAIL_USE_TLS = True
 EMAIL_HOST = "smtp.gmail.com"
-EMAIL_HOST_USER = "mannirmalfoundation01@gmail.com"
-EMAIL_HOST_PASSWORD = "mannirmal8800"
+EMAIL_HOST_USER = "wizmrcomputer@gmail.com"
+EMAIL_HOST_PASSWORD = "wizcomp2705"
 EMAIL_PORT = 587
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
@@ -149,7 +148,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # CELERY_TIMEZONE = "Asia/Kolkata"
 # CELERY_TASK_TRACK_STARTED = True
 # CELERY_TASK_TIME_LIMIT = 30 * 60
-CELERY_BROKER_URL = 'amqps://djwlgyqd:35Kg-92THxWe4oiR5iOfZBf4Lyormo1E@clam.rmq.cloudamqp.com/djwlgyqd'
+CELERY_BROKER_URL = 'amqp://guest:guest@localhost:5672//'
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
