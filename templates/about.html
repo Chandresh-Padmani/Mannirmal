@@ -1,0 +1,274 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}About | {% endblock title %}
+
+{% block navbar %}
+<li><a class="nav-link scrollto" href="/index">Home</a></li>
+<li><a class="nav-link scrollto active" href="#about">About</a></li>
+<li><a class="nav-link scrollto" href="/volunteer">Volunteer Registration</a></li>
+<li><a class="nav-link scrollto" href="/portfolio">Portfolio</a></li>
+<li><a class="nav-link scrollto" href="/ideas">Ideas</a></li>
+<li><a class="nav-link scrollto" href="/contact">Contact</a></li>
+<li><a role="button" class="btn btn-danger" data-toggle="button" aria-pressed="false" autocomplete="off" href="/donate">Donate</a></li>
+{% endblock navbar %}
+
+{% block body %}
+
+<main id="main" data-aos="fade-up">
+
+  <section id="about" class="about section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="team row justify-content-center pt-0">
+
+        <div class="col-lg-2dot4 col-md-6 d-flex align-items-stretch order-lg-1 order-2" data-aos="fade-up"
+          data-aos-delay="100">
+          <div class="member">
+            <div class="member-img">
+              <img src="{% static 'assets/img/about/father.jpeg' %}" class="img-fluid" alt="">
+            </div>
+            <div class="member-info">
+              <h4>Late Navneetlal Gandhi</h4>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 order-1 order-lg-2">
+          <div class="section-title">
+            <div class="pb-3">
+              <img src="{% static 'assets/img/about/symbol.jpg' %}" class="img-fluid" alt="">
+            </div>
+            <h2>About</h2>
+            <h3>Find Out More <span>About Us</span></h3>
+            <p>“The simplest acts of kindness are by far more powerful then a thousand heads bowing in prayer.”
+              <br>― Mahatma Gandhi</p>
+
+          </div>
+        </div>
+
+
+        <div class="col-lg-2dot4 col-md-6 d-flex align-items-stretch order-3 orde-lg-3" data-aos="fade-up"
+          data-aos-delay="200">
+          <div class="member">
+            <div class="member-img">
+              <img src="{% static 'assets/img/about/baa.jpg' %}" class="img-fluid" alt="">
+            </div>
+            <div class="member-info">
+              <h4>Mrs. Manjulaben Gandhi</h4>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ======= Testimonials Section ======= -->
+      <section id="testimonials" class="testimonials section-bg pt-lg-0">
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-lg-4">
+              <div class="section-title align-items-center" data-aos="fade-right">
+                <div class="section-title">
+                  <h3>Our <span>Role Model</span></h3>
+                  <p>Role models are only of limited use. For no-one is as important, potentially powerful and as key in
+                    your life and world as you. <br> ― Rasheed Ogunlaru </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <section id="team" class="team section-bg pt-0">
+                <div class="container" data-aos="fade-up">
+                  <div class="row justify-content-center">
+                    <div class="ms-4" data-aos="fade-up" data-aos-delay="100">
+
+                      <div class="col-lg-10 col-md-6 d-flex align-items-stretch" data-aos="fade-up"
+                        data-aos-delay="400">
+                        <div class="member">
+                          <div class="member-img">
+                            <img src="{% static 'assets/img/team/divyataben.jpeg' %}" class="img-fluid" alt="">
+                          </div>
+                          <div class="member-info">
+                            <h4>Ms. Divyata N. Gandhi</h4>
+                            <span>Co-founder</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+            </div>
+
+            <div class="col-lg-4">
+              <div class="information align-items-center" data-aos="fade-right">
+                <div class="">
+                  <p> “When you see a role model, what you see is a person who has the courage to be who you wish you
+                    could be. Stop wishing and just be.”<br><br> We all actually just need more people like you all also
+                    more organisations like these NGOs if we actually wish to make this very society as an ideal one for
+                    all of us to actually live in. Thanks giving for all those NGOs who actually only work for the
+                    betterment of the country as well as our very society. <br><br> ― Divyata N. Gandhi </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section><!-- End Testimonials Section -->
+      
+      <div class="row about-container pt-1 d-flex align-items-center">
+
+        <div class="row about-extra">
+          <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-left">
+            <img src="{% static 'assets/img/hero-bg2.jpg' %}" class="img-fluid" alt="">
+            <a href="https://www.youtube.com/watch?v=xdX2bPUv7Rk" class="venobox play-btn mb-4" data-vbtype="video"
+              data-autoplay="true"></a>
+          </div>
+
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-right">
+            <h4>Thought</h4>
+            <p>
+              From an early age, I had a sense of service. I did small-to-large service activities. While I was in
+              Rajkot and studying in S.Y. B.Sc. I used to join the activities of "Punit Seva Ashram". From then onwards,
+              I had an idea that I would also do something like this and build an organization to provide such services.
+            </p>
+            <p>
+              The "Man-Nirmal Foundation" was born to make this dream a reality. Service activities continued even
+              without the organization. In Gondal, Giving green grass to cows, feeding the poor, feeding Biscuits,
+              Ganthiya, Bundi in slums. All these activities I used to do with my Father. From then on, my mind turned
+              to
+              this, and the idea of establishing an organization came up.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="row about-extra pt-5 d-flex align-items-center">
+        <div class="col-lg-6" data-aos="fade-right">
+          <img src="{% static 'assets/img/about/about-2.jpg' %}" class="img-fluid" alt="">
+          <a href="https://www.youtube.com/watch?v=GeRNXKITd3k" class="venobox play-btn mb-4" data-vbtype="video"
+            data-autoplay="true"></a>
+        </div>
+        <div class="col-lg-6 pt-5 pt-lg-0" data-aos="fade-left">
+          <h4>Objective</h4>
+          <p>
+            The main objective of the organization is to eradicate the hunger of the poor by donating food. At the same
+            time, to provide grass and fodder to the hungry animals, birds. And also to involve the people in the work
+            of this social service.
+          </p>
+
+        </div>
+      </div>
+
+
+      <div class="row about-extra pt-5 d-flex align-items-center">
+        <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+          <img src="{% static 'assets/img/about/about-3.jpg' %}" class="img-fluid" alt="">
+          <a href="https://www.youtube.com/watch?v=pue5Hquhvdw" class="venobox play-btn mb-4" data-vbtype="video"
+            data-autoplay="true"></a>
+        </div>
+
+        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-right">
+          <h4>Supportance</h4>
+          <p>
+            My family has already given their full support to the "Man-Nirmal Foundation". My mother Mrs. Manjulaben,
+            and elder sister Mrs. Divyataben encouraged my thoughts and work. My wife Mrs. Lattaben, my son Mr. Jugesh
+            and daughter-in-law Mrs. Hemakshi, have contributed physically and mentally.
+          </p>
+          <p>
+            Besides, my friends Mr. Rajubhai Dharod, Mr. Subhashbhai Jain, Mr. Dipenbhai Dharod, and Mrs. Monikaben
+            Dharod - all of them have fully supported me and the "Man-Nirmal Foundation" from the beginning. I am
+            grateful to them.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="row about-extra pt-5 d-flex align-items-center">
+        <div class="col-lg-6" data-aos="fade-right">
+          <img src="{% static 'assets/img/about/about-5.jpg' %}" class="img-fluid" alt="">
+          <a href="https://www.youtube.com/watch?v=gW8IkDEvcTY" class="venobox play-btn mb-4" data-vbtype="video"
+            data-autoplay="true"></a>
+        </div>
+        <div class="col-lg-6 pt-5 pt-lg-0" data-aos="fade-left">
+          <h4>First Step</h4>
+          <p>
+            The organization started in the year 2019 with "Chhas Vitran". In the hot summer of April-May, it started
+            with the distribution of 20 liters of "Chhas(buttermilk)", and later it was distributed up to about 130
+            liters.
+          </p>
+
+        </div>
+      </div>
+
+
+      <div class="row about-extra pt-5 d-flex align-items-center">
+        <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+          <img src="{% static 'assets/img/about/about-6.jpg' %}" class="img-fluid" alt="">
+          <a href="https://www.youtube.com/watch?v=mr-ghjxGy4I" class="venobox play-btn mb-4" data-vbtype="video"
+            data-autoplay="true"></a>
+        </div>
+
+        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+          <h4>Current Activities/Services</h4>
+          <ul>
+            <li><i class="bi bi-check-circle"></i> Giving bananas to monkeys every morning </li>
+            <li><i class="bi bi-check-circle"></i> Giving ganthiya to birds</li>
+            <li><i class="bi bi-check-circle"></i> Giving biscuits, milk and roti to dogs </li>
+            <li><i class="bi bi-check-circle"></i> Giving food to the poor who have no one, sitting on the sidewalk
+            </li>
+            <li><i class="bi bi-check-circle"></i> Going to Nadiad Civil Hospital Feeding the hungry every Thursday
+            </li>
+          </ul>
+          <p>
+            Even during the lockdown's hard times due to the covid-19 epidemic, the Man-Nirmal Foundation continued to
+            try to satisfy the hunger of the poor by donating food.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="row about-extra pt-5 d-flex align-items-center">
+        <div class="col-lg-6" data-aos="fade-right">
+          <img src="{% static 'assets/img/about/about-4.jpg' %}" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-6 pt-5 pt-lg-0 content" data-aos="fade-left">
+          <h4>Future Goals</h4>
+          <ul>
+            <li><i class="bi bi-check-circle"></i> In the future, To provide nutritious food to the hungry people in
+              three government hospitals in Nadiad. </li>
+            <li><i class="bi bi-check-circle"></i> To provide food to the poor children in the government primary
+              schools of Nadiad city.
+              <br>To cover the surrounding primary school children under the "Baalbhojan" project, if the government or
+              a donor will provide further assistance and funding.
+            </li>
+            <li><i class="bi bi-check-circle"></i> To provide educational assistance to poor children. </li>
+            <li><i class="bi bi-check-circle"></i> Trying to meet the small and big needs of the poor. </li>
+            <li><i class="bi bi-check-circle"></i> Increase service activities as future assistance is available.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+  </section><!-- End About Section -->
+
+
+</main><!-- End #main -->
+
+
+{% endblock body %}

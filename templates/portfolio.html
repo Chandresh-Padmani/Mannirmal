@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Portfolio | {% endblock title %}
+
+{% block navbar %}
+  <li><a class="nav-link scrollto" href="/index">Home</a></li>
+  <li><a class="nav-link scrollto" href="/about">About</a></li>
+  <li><a class="nav-link scrollto" href="/volunteer">Volunteer Registration</a></li>
+  <li><a class="nav-link scrollto active" href="#portfolio">Portfolio</a></li>
+  <li><a class="nav-link scrollto" href="/ideas">Ideas</a></li>
+  <li><a class="nav-link scrollto" href="/contact">Contact</a></li>
+  <li><a role="button" class="btn btn-danger" data-toggle="button" aria-pressed="false" autocomplete="off" href="/donate">Donate</a></li>
+
+{% endblock navbar %}
+
+{% block body %} 
+
+<main id="main" data-aos="fade-up">
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <h3>Check our <span>Portfolio</span></h3>
+          <p>“I don’t think you ever stop giving. I really don’t. I think it’s an on-going process. And it’s not just
+          about being able to write a check. It’s being able to touch somebody’s life.” <br>- Oprah Winfrey</p>
+        </div>
+
+        <!-- <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div> -->
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+        {% for x in pics %}
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{{x.cover.url}}" class="img-fluid" alt="image">
+            <div class="portfolio-info">
+              <h4>Man-Nirmal</h4>
+              <p>Service</p>
+              <a href="{{x.cover.url}}" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+          
+            </div>
+          </div>
+
+        {% endfor %}
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+  </main><!-- End #main -->
+
+{% endblock body %}
+

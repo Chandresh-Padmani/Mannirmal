@@ -1,0 +1,210 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Donate | {% endblock title %}
+
+{% block form_style %}
+<link rel="stylesheet" type="text/css" href="{% static 'assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<!-- Template Main CSS File -->
+<link href="{% static 'assets/css/util.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/table.css' %}" rel="stylesheet">
+{% endblock form_style %}
+
+{% block navbar %}
+<li><a class="nav-link scrollto" href="/index">Home</a></li>
+<li><a class="nav-link scrollto" href="/about">About</a></li>
+<li><a class="nav-link scrollto" href="/volunteer">Volunteer Registration</a></li>
+<li><a class="nav-link scrollto" href="/portfolio">Portfolio</a></li>
+<li><a class="nav-link scrollto" href="/ideas">Ideas</a></li>
+<li><a class="nav-link scrollto" href="/contact">Contact</a></li>
+<li><a role="button" class="btn btn-danger" data-toggle="button" aria-pressed="false" autocomplete="off"
+        href="#donate">Donate</a></li>
+
+{% endblock navbar %}
+
+{% block body %}
+<main id="main" data-aos="fade-up">
+
+    <!-- ======= Donate Section ======= -->
+    <section id="donate" class="team section-bg">
+
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Donate</h2>
+                <h3><span>Donate</span> Us</h3>
+                <p>“There is nothing more beautiful than someone who goes out of their way to make life beautiful for
+                    others.”<br>- Mandy Hale</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 text-center">
+                <img src="{% static 'assets/img/donate-info2.jpg' %}" class="img-fluid mt-5 mx-lg-5 mx-md-0 mx-sm-0"
+                    width="125%" height="125%" alt="">
+                <div class="px-lg-3">
+                    <img src="{% static 'assets/img/symbol2.jfif' %}" class="img-fluid mx-5 mt-4 px-5" width="65%"
+                        height="65%" alt="">
+                </div>
+
+            </div>
+
+            <div class="col-lg-8 mx-0">
+                </section--><!-- Donate Section -->
+                <div class="limiter">
+                    <div class="container-table100 container-fluid">
+                        <div class="card shadow wrap-table100">
+                            <div class="table100 section-bg">
+                                <table class="people">
+                                    <thead>
+                                        <tr class="table100-head1">
+                                            <th colspan="4">To Feed Poor People</th>
+                                        </tr>
+                                        <tr class="table100-head2">
+                                            <th class="column1">Donate Meals</th>
+                                            <th class="column2">Amount</th>
+                                            <th class="column3">Donate</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="column1">10 Meals</td>
+                                            <td class="column2">Rs. 250</td>
+                                            <td class="column3">
+                                                <form>
+                                                    <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                                                        data-payment_button_id="pl_HVk9DVTkfowRAE" async> </script>
+                                                </form>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="column1">20 Meals</td>
+                                            <td class="column2">Rs. 500</td>
+                                            <td class="column3">
+                                                <form>
+                                                    <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                                                        data-payment_button_id="pl_HVkBXMPkP0X1EV" async> </script>
+                                                </form>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="column1">50 Meals</td>
+                                            <td class="column2">Rs. 1250</td>
+                                            <td class="column3">
+                                                <form>
+                                                    <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                                                        data-payment_button_id="pl_HVkDZCShtHoU6n" async> </script>
+                                                </form>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="column1">100 Meals</td>
+                                            <td class="column2">Rs. 2500</td>
+                                            <td class="column3">
+                                                <form>
+                                                    <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                                                        data-payment_button_id="pl_HVkKWbV7pJawgf" async> </script>
+                                                </form>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="limiter">
+                    <div class="container-table100 container-fluid">
+                        <div class="card shadow wrap-table100">
+                            <div class="table100">
+                                <table class="common">
+                                    <tbody>
+                                        <tr>
+                                            <td class="column6">Donate an Amount of your Choice</td>
+                                            <td class="column7">
+                                                <form>
+                                                    <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                                                        data-payment_button_id="pl_HVkLzNDzG2xMyA" async> </script>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="limiter">
+                    <div class="container-table100 container-fluid">
+                        <div class="card shadow wrap-table100">
+                            <div class="table100 section-bg">
+                                <table class="animal">
+                                    <thead>
+                                        <tr class="table100-head1">
+                                            <th colspan="4">For Animals and Birds</th>
+                                        </tr>
+                                        <tr class="table100-head2">
+                                            <th class="column4">Item</th>
+                                            <th class="column5">Kg</th>
+                                            <th class="column2">Amount</th>
+                                            <th class="column3">Donate</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="column4">Sev</td>
+                                            <td class="column5">2 Kg</td>
+                                            <td class="column2">Rs. 180</td>
+                                            <td class="column3">
+                                                <form>
+                                                    <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                                                        data-payment_button_id="pl_HVkOgA66WXt5Sl" async> </script>
+                                                </form>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="column4">Biscuit</td>
+                                            <td class="column5">5 Kg</td>
+                                            <td class="column2">Rs. 100</td>
+                                            <td class="column3">
+                                                <form>
+                                                    <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                                                        data-payment_button_id="pl_HVkQwxuoYPIWcQ" async> </script>
+                                                </form>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="column4">Bananas</td>
+                                            <td class="column5">3 Kg</td>
+                                            <td class="column2">Rs. 135</td>
+                                            <td class="column3">
+                                                <form>
+                                                    <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                                                        data-payment_button_id="pl_HVkUw2BlisrpN3" async> </script>
+                                                </form>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section><!-- End donate Section -->
+</main><!-- End #main -->
+
+{% endblock body %}
